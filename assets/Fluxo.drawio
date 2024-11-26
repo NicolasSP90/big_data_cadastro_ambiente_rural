@@ -1,0 +1,272 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="K4r23N5aZ-oDP-C0rsfa">
+    <mxGraphModel dx="1420" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-43" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="20" y="160" width="720" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="630" y="170" width="100" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="30" y="170" width="500" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-2" value="Raw" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="1" vertex="1">
+          <mxGeometry x="40" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-3" value="CSV" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-3" target="iMMn5p7-ex1ef09UfYXv-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="590" as="sourcePoint" />
+            <mxPoint x="410" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-5" value="Silver" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+          <mxGeometry x="440" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-7" value="Gold" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
+          <mxGeometry x="640" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-8" value="Bronze" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="1" vertex="1">
+          <mxGeometry x="240" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-9" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="40" as="sourcePoint" />
+            <mxPoint x="280" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-10" value="Spark (Python)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="20" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-11" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="80" as="sourcePoint" />
+            <mxPoint x="280" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-12" value="Spark (SQL)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="60" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-13" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-2" target="iMMn5p7-ex1ef09UfYXv-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="299.5" as="sourcePoint" />
+            <mxPoint x="210" y="299.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-14" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-8" target="iMMn5p7-ex1ef09UfYXv-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="-20" as="sourcePoint" />
+            <mxPoint x="390" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-18" value="Transacional" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-20" value="Analítica" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-23" value="OBS: ao invés de duas camadas silver, dá para gerar uma tabela temporária apartir da Silver Transacional para fazer a&amp;nbsp;Camada Gold. Assim não tem necessidade de armazenar uma tabela silver analítica" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="50" width="295" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-25" value="Docker" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-28" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="220" y="100" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-29" value="Biblioteca&lt;div&gt;(Funções / Objetos)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-30" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="160" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-31" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-30" target="iMMn5p7-ex1ef09UfYXv-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="310" as="sourcePoint" />
+            <mxPoint x="170" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-32" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="360" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-33" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f0a30a;strokeColor=#BD7000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-32" target="iMMn5p7-ex1ef09UfYXv-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="310" as="sourcePoint" />
+            <mxPoint x="370" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-34" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="560" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-42" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#b1ddf0;strokeColor=#10739e;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-34" target="iMMn5p7-ex1ef09UfYXv-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="540" as="sourcePoint" />
+            <mxPoint x="380" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-45" value="Justificativas" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="840" width="480" height="320" as="geometry">
+            <mxRectangle x="340" y="20" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-46" value="Docker: Padronização do ambiente de desenvolvimento." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="40" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-47" value="Spark: Performance na transformação dos dados" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="80" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-48" value="Arquitetura: Arquitetura tipo &quot;Medalhão&quot; , para armazenamento e rastreabilidade dos dados. Isolamento de aplicações em cada camada." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="120" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-52" value="X" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="160" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-50" value="X" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="200" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-49" value="X" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="240" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iMMn5p7-ex1ef09UfYXv-51" value="X" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="iMMn5p7-ex1ef09UfYXv-45" vertex="1">
+          <mxGeometry y="280" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-1" value="Questões" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="1200" width="480" height="360" as="geometry">
+            <mxRectangle x="340" y="20" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-2" value="Armazenamento de camadas: Parquet? Delta?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="40" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-3" value="Integrar com Postgres ou algum banco específico?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="80" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-4" value="Banco de dados distribuído apenas para camada Gold ou fazemos para a silver/bronze também? Na silver acho que se justifica para fazer querys intermediárias, mas na bronze não vejo vantagens." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="120" width="480" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-5" value="Precisaria fazer &quot;dois&quot; fluxos, um para funcional e outro para distribuido para comparar?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="200" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-6" value="O banco distribuido precisa ser entre clusters ou no mesmo cluster?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="240" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-7" value="Como fazer a distribuição horizontal?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="280" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-8" value="X" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-1" vertex="1">
+          <mxGeometry y="320" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-9" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#b1ddf0;strokeColor=#10739e;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="iMMn5p7-ex1ef09UfYXv-5" target="iMMn5p7-ex1ef09UfYXv-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="310" as="sourcePoint" />
+            <mxPoint x="650" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-11" target="yf8nLIWNOVaigP4EAvDj-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-11" value="Proposição da Nova Arquitetura" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="40" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-12" value="Proponha uma arquitetura de banco de dados distribuído que seja adequada" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-11" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-13" value="Explique as escolhas de tecnologias, componentes e a lógica de funcionamento da arquitetura." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-11" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-19" target="yf8nLIWNOVaigP4EAvDj-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-19" value="Implementação da Arquitetura" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="200" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-20" value="Implemente a arquitetura proposta em um ambiente de teste" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-19" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-21" value="Configuração e integração de sistemas de gerenciamento de banco de dados distribuído, servidores, clusters e outros componentes necessários." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-19" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-23" target="yf8nLIWNOVaigP4EAvDj-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-23" value="Modelagem do Novo Banco de Dados" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="360" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-24" value="Modele os dados do &quot;Cadastro Ambiental Rural&quot; de acordo com a arquitetura proposta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-23" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-33" target="yf8nLIWNOVaigP4EAvDj-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-33" value="Projeto de Particionamento Adequado/efetivo" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="480" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-34" value="Projete um esquema de particionamento que permita a distribuição eficiente dos dados em diferentes nós do banco de dados distribuído." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-33" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-35" value="&lt;div&gt;Considere estratégias de particionamento horizontal.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-33" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-38" value="Bateria de Testes (queries)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="640" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-39" value="Realize uma série de testes no ambiente distribuído e no ambiente centralizado." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-38" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-40" value="Avalie o desempenho em termos de tempo de resposta, escalabilidade e consumo de recursos." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-38" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-41" value="Registre e analise os resultados." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-38" vertex="1">
+          <mxGeometry y="120" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-43" target="yf8nLIWNOVaigP4EAvDj-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-43" value="Raw" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="1" vertex="1">
+          <mxGeometry x="40" y="440" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-44" value="Função: Receber os dados brutos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-43" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-46" target="yf8nLIWNOVaigP4EAvDj-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-46" value="Bronze" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="600" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-47" value="Função: Armazenar os dados brutos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-46" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-48" value="Armazenamento distribuído? (Hadoop? Parquet, Delta?)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-46" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yf8nLIWNOVaigP4EAvDj-50" target="yf8nLIWNOVaigP4EAvDj-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-50" value="Silver" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+          <mxGeometry x="40" y="760" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-51" value="Função: Processar, limpar e distribuir os dados os dados" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-50" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-52" value="Como fazer a distribuição dos dados. Qual tipo de dado utilizar (Parquet, Delta, etc). Necessário Hadoop?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-50" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-54" value="Gold" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
+          <mxGeometry x="40" y="920" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-55" value="Função: Gerar tabelas de consultas analíticas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-54" vertex="1">
+          <mxGeometry y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yf8nLIWNOVaigP4EAvDj-56" value="Como fazer a distribuição dos dados das tabelas? Isso já não é nativo da tabela Delta?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="yf8nLIWNOVaigP4EAvDj-54" vertex="1">
+          <mxGeometry y="80" width="520" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

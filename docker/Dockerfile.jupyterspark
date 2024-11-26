@@ -1,0 +1,45 @@
+# Usar imagem base do Ubuntu
+FROM jupyter/pyspark-notebook:spark-3.5.0
+
+# Mude para root para aplicar permissões
+USER root
+
+# Atualizar pacotes e instalar dependências do sistema
+RUN apt-get update && apt-get install -y openjdk-8-jdk
+
+# Configurar variáveis de ambiente para Java
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV PATH=$JAVA_HOME/bin:$PATH
+
+# Baixar o JAR do Delta Lake compatível com Spark 3.5.x
+RUN wget -O /usr/local/spark/jars/delta-core_2.12-2.1.0.jar \
+    https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.1.0/delta-core_2.12-2.1.0.jar
+
+# Configurar o PYSPARK_SUBMIT_ARGS com o Delta Lake
+ENV PYSPARK_SUBMIT_ARGS="--packages io.delta:delta-core_2.12:2.1.0 \
+    --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension \
+    --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog pyspark-shell"
+
+# Criar e configurar permissões para o diretório de trabalho
+RUN mkdir -p /home/jovyan/work && chmod -R 777 /home/jovyan/work
+
+# Retorne para o usuário jovyan
+USER jovyan
+
+# Instalar dependências com pip
+RUN pip install --upgrade pip
+
+# Configurar o ambiente de trabalho
+WORKDIR /app
+
+# Copiar arquivos do projeto para o container
+COPY . /app
+
+# Comando padrão ao iniciar o container
+CMD ["start-notebook.sh"]
+
+# Build
+# docker-compose up --build
+
+# Run
+# docker run -it -p 8888:8888 -v "$(pwd):/home/jovyan/app" projeto_bigdata
