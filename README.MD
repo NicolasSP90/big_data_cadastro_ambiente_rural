@@ -18,9 +18,7 @@ Tecnologias necessárias:
 
 ### Setup (Windows)
 
-A imagem do containe docker utiliza os arquivos *docker-compose.yaml* e *Dockerfile.jupyterspark*. No diretório *docker* do projeto, utilizar o terminal para:
-* Montar a imagem: *docker-compose up --build*
-* Rodar a imagem: *docker run -it -p 8888:8888 -v "$(pwd):/home/jovyan/app" projeto_bigdata*
+A imagem do containe docker utiliza os arquivos *docker-compose.yaml* e *Dockerfile.jupyterspark*. No diretório raiz do projeto, utilizar o terminal para montar a imagem e subir o container: *docker-compose -f docker/docker-compose.yaml up --build*
 
 O container pode ser interrompido e inicializado pelo Docker Desktop. Após ser inicializado, o projeto pode ser acessado de duas formas:
 

@@ -1,11 +1,11 @@
 services:
   spark-notebook:
     build:
-      context: .
-      dockerfile: Dockerfile.jupyterspark
+      context: ..
+      dockerfile: docker/Dockerfile.jupyterspark
     container_name: projeto_bigdata
     volumes:
-      - .:/home/jovyan/app  # Mapeia o diretório atual para o diretório /app no container
+      - ..:/home/jovyan/app  # Mapeia o diretório atual para o diretório /app no container
     ports:
       - "8888:8888"  # Expor o Jupyter Notebook na porta 8888
     environment:

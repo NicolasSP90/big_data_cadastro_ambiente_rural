@@ -1,4 +1,4 @@
-# Usar imagem base do Ubuntu
+# Usar a imagem base com PySpark e Jupyter
 FROM jupyter/pyspark-notebook:spark-3.5.0
 
 # Mude para root para aplicar permissões
@@ -21,7 +21,7 @@ ENV PYSPARK_SUBMIT_ARGS="--packages io.delta:delta-core_2.12:2.1.0 \
     --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog pyspark-shell"
 
 # Criar e configurar permissões para o diretório de trabalho
-RUN mkdir -p /home/jovyan/work && chmod -R 777 /home/jovyan/work
+RUN mkdir -p /home/jovyan/app && chmod -R 777 /home/jovyan/app
 
 # Retorne para o usuário jovyan
 USER jovyan
@@ -30,16 +30,13 @@ USER jovyan
 RUN pip install --upgrade pip
 
 # Configurar o ambiente de trabalho
-WORKDIR /app
+WORKDIR /home/jovyan/app
 
 # Copiar arquivos do projeto para o container
-COPY . /app
+COPY . /home/jovyan/app
 
 # Comando padrão ao iniciar o container
 CMD ["start-notebook.sh"]
 
 # Build
 # docker-compose up --build
-
-# Run
-# docker run -it -p 8888:8888 -v "$(pwd):/home/jovyan/app" projeto_bigdata
