@@ -11,12 +11,22 @@ RUN apt-get update && apt-get install -y openjdk-8-jdk
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 
-# Baixar o JAR do Delta Lake compatível com Spark 3.5.x
-RUN wget -O /usr/local/spark/jars/delta-core_2.12-2.1.0.jar \
-    https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.1.0/delta-core_2.12-2.1.0.jar
+
+
+
+
+# Baixar os JARs do Delta Core e Delta Storage compatíveis com Delta Lake 3.0.0
+RUN curl -L -o /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar \
+    https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
+
+RUN wget -O /usr/local/spark/jars/delta-storage-3.0.0.jar \
+    https://repo1.maven.org/maven2/io/delta/delta-storage/3.0.0/delta-storage-3.0.0.jar
+
+# Instalar o delta-spark 3.0.0
+RUN pip install delta-spark==3.0.0
 
 # Configurar o PYSPARK_SUBMIT_ARGS com o Delta Lake
-ENV PYSPARK_SUBMIT_ARGS="--packages io.delta:delta-core_2.12:2.1.0 \
+ENV PYSPARK_SUBMIT_ARGS="--jars /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar,/usr/local/spark/jars/delta-storage-3.0.0.jar \
     --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension \
     --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog pyspark-shell"
 
@@ -37,6 +47,3 @@ COPY . /home/jovyan/app
 
 # Comando padrão ao iniciar o container
 CMD ["start-notebook.sh"]
-
-# Build
-# docker-compose up --build
