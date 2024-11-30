@@ -3,6 +3,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.jupyterspark
+    mem_limit: 4096m  # Limita a memória para 4096 MB
+    cpus: 2        # Limita o uso a 2 núcleos
     container_name: projeto_bigdata
     volumes:
       - ..:/home/jovyan/app  # Mapeia o diretório atual para o diretório /app no container

@@ -11,10 +11,6 @@ RUN apt-get update && apt-get install -y openjdk-8-jdk
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 
-
-
-
-
 # Baixar os JARs do Delta Core e Delta Storage compatíveis com Delta Lake 3.0.0
 RUN curl -L -o /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar \
     https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
