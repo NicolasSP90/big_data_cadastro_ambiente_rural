@@ -4,13 +4,18 @@
 
 ## Objetivos
 
+* Criação de um ambiente padrão de desenvolvimento que não dependa dos diferentes Sistemas Operacionais, Hardwares, etc. dos integrantes do grupo.
+* Comparação dos tempos de querys entre um banco de dados distribuído e um banco de dados centralizado.
+
 ## Tecnologias
+
+
 
 # Ambiente de Desenvolvimento
 
 Tecnologias necessárias:
 * Docker
-* 
+* Jupyter
 
 ## Docker 
 

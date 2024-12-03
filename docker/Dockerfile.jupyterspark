@@ -11,20 +11,27 @@ RUN apt-get update && apt-get install -y openjdk-8-jdk
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 
-# Baixar os JARs do Delta Core e Delta Storage compatíveis com Delta Lake 3.0.0
+# Baixar os JARs do Delta Core, Delta Storage e Hive-exec compatíveis com Delta Lake e Spark
 RUN curl -L -o /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar \
     https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
 
 RUN wget -O /usr/local/spark/jars/delta-storage-3.0.0.jar \
     https://repo1.maven.org/maven2/io/delta/delta-storage/3.0.0/delta-storage-3.0.0.jar
 
+RUN wget -O /usr/local/spark/jars/hive-exec-2.3.9.jar \
+    https://repo1.maven.org/maven2/org/apache/hive/hive-exec/3.0.0/hive-exec-3.0.0.jar
+
 # Instalar o delta-spark 3.0.0
 RUN pip install delta-spark==3.0.0
 
+# Criar o diretório para o Hive Warehouse
+RUN mkdir -p /home/jovyan/app/data/gold/hive_warehouse && chmod -R 777 /home/jovyan/app/data/gold/hive_warehouse
+
 # Configurar o PYSPARK_SUBMIT_ARGS com o Delta Lake
-ENV PYSPARK_SUBMIT_ARGS="--jars /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar,/usr/local/spark/jars/delta-storage-3.0.0.jar \
+ENV PYSPARK_SUBMIT_ARGS="--jars /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar,/usr/local/spark/jars/delta-storage-3.0.0.jar,/usr/local/spark/jars/hive-exec-3.0.0.jar \
     --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension \
-    --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog pyspark-shell"
+    --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog \
+    --conf spark.sql.warehouse.dir=/home/jovyan/app/data/gold/hive_warehouse pyspark-shell"
 
 # Criar e configurar permissões para o diretório de trabalho
 RUN mkdir -p /home/jovyan/app && chmod -R 777 /home/jovyan/app

@@ -2,4 +2,5 @@
 temas_ambientais.csv
 temas_ambientais.parquet
 bronze_distribuida
-silver_distribuida
+silver_distribuida_uf
+hive_warehouse
