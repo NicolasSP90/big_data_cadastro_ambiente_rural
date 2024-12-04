@@ -15,10 +15,10 @@ ENV PATH=$JAVA_HOME/bin:$PATH
 RUN curl -L -o /usr/local/spark/jars/delta-spark_2.12-3.0.0.jar \
     https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
 
-RUN wget -O /usr/local/spark/jars/delta-storage-3.0.0.jar \
+RUN curl -L -o /usr/local/spark/jars/delta-storage-3.0.0.jar \
     https://repo1.maven.org/maven2/io/delta/delta-storage/3.0.0/delta-storage-3.0.0.jar
 
-RUN wget -O /usr/local/spark/jars/hive-exec-2.3.9.jar \
+RUN curl -L -o /usr/local/spark/jars/hive-exec-3.0.0.jar \
     https://repo1.maven.org/maven2/org/apache/hive/hive-exec/3.0.0/hive-exec-3.0.0.jar
 
 # Instalar o delta-spark 3.0.0

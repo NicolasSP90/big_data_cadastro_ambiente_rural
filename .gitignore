@@ -3,3 +3,6 @@ raw
 bronze
 silver
 gold
+.env
+derby.log
+metastore_db
